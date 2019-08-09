@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <!-- Google Chrome Frame也可以让IE用上Chrome的引擎: -->
+    <meta name="renderer" content="webkit">
+    <!--国产浏览器高速模式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 定义页面的最新版本 -->
+    <meta name="description" content="网站简介"/>
+    <!-- 网站简介 -->
+    <meta name="keywords" content="搜索关键字，以半角英文逗号隔开"/>
+    <title>Fanの书店后台管理系统</title>
+
+
+    <link rel="stylesheet" type="text/css" href="../common/css/base2.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/frame_sys.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/iconfont.css">
+    <script type="text/javascript" src="../common/framework/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../common/js/frame.js"></script>
+    <!--分页插件-->
+    <link rel="stylesheet" type="text/css" href="../common/css/jquery.page.css">
+    <script type="text/javascript" src="../common/framework/jquery.page.js"></script>
+
+    <!--自定义滚动条-->
+    <script type="text/javascript" src="../common/framework/jquery-ui-1.10.4.min.js"></script>
+    <script type="text/javascript" src="../common/framework/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="../common/framework/jquery.mCustomScrollbar.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../common/css/jquery.mCustomScrollbar.css">
+
+
+</head>
+<body>
+
+<div class="top">
+    <p>Fanの书店后台管理系统</p>
+    <div>
+	    <span>
+	    	<a class="a1" href="javascript:void(0)"><img src="../common/image/system.png"/><font>123456</font></a>
+	    	<ul style="display: none;">
+	    		<li><a href="javascript:menu_ajax('../common/tgls/agent/agent_list.html', '个人中心')"><i class="iconfont icon-yonghu1"></i>个人中心</a></li>
+	    		<li><a href="javascript:menu_ajax('../common/tgls/agent/agent_list.html', '修改密码')"><i class="iconfont icon-xiugaimima"></i>修改密码</a></li>
+	    		<li><a href=""><i class="iconfont icon-zhuxiaologout11"></i>退出登录</a></li>
+	    	</ul>
+	    </span>
+    </div>
+</div>
+
+<div class="main">
+
+    <div class="menu">
+    	<div class="user">
+    		<img src="../common/image/system.png"/>
+    		<div>
+    			<h1>123456</h1>
+    			<span>
+	    			<i class="yd"></i>在线
+	    			<a href=""><i class="iconfont icon-zhuxiaologout11"></i><font>注销</font></a>
+    			</span>
+    		</div>
+    	</div>
+        <div class="menuList">
+            <ul class="menu1">
+                <li class="menuli1">
+                    <a class="menua1" href="javascript:menu_ajax('../common/tgls/index.html', '后台主页')"><i class="iconfont icon-shouye left"></i>
+                        <p>后台主页</p></a>
+                </li>
+                <li class="menuli1">
+                    <a class="menua1" href="javascript:void(0)"><i class="iconfont icon-wodeyewuyuan left"></i>
+                        <p>客户管理</p><i
+                                class="iconfont icon-jiantou_zuo right"></i></a>
+                    <ul class="menu2">
+                        <li class="menuli2"><a class="menua2" href="javascript:menu_ajax('../common/tgls/agent/customer_list.php', '客户管理,信息查看/修改')"><i
+                                class="menua2_ico"><span></span></i>客户信息查看/修改</a></li>
+                    </ul>
+                </li>
+                <li class="menuli1">
+                    <a class="menua1" href="javascript:void(0)"><i class="iconfont icon-shangpin left"></i>
+                        <p>书籍管理</p><i
+                                class="iconfont icon-jiantou_zuo right"></i></a>
+                    <ul class="menu2">
+                        <li class="menuli2"><a class="menua2" href="javascript:menu_ajax('../common/tgls/agent/book_list.php', '书籍管理,信息查看/修改')"><i
+                                class="menua2_ico"><span></span></i>书籍信息查看/修改</a></li>
+                        <li class="menuli2"><a class="menua2" href="javascript:menu_ajax('../common/tgls/agent/book_add.html', '书籍管理,添加书籍')"><i
+                                class="menua2_ico"><span></span></i>添加书籍</a></li>
+                    </ul>
+                </li>
+                <li class="menuli1">
+                    <a class="menua1" href="javascript:void(0)"><i class="iconfont icon-yingyongzhongxin left"></i>
+                        <p>预购管理</p><i
+                                class="iconfont icon-jiantou_zuo right"></i></a>
+                    <ul class="menu2">
+                        <li class="menuli2"><a class="menua2" href="javascript:menu_ajax('../common/tgls/admin/order_book_list.php', '预购管理,预购图书清单')"><i
+                                class="menua2_ico"><span></span></i>预购图书清单</a></li>
+                        <li class="menuli2"><a class="menua2" href="javascript:menu_ajax('../common/tgls/admin/order_add.html', '书籍管理,添加书籍')"><i
+                                class="menua2_ico"><span></span></i>添加预购书籍</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="main_body">
+        <div class="main_body_title"><font>后台主页</font></div>
+        <div class="main_body_con">
+        	<iframe id="mainIframe" src="../common/tgls/index.html" scrolling="no"></iframe>
+        </div>
+		<div class="copyright">
+		    850393834@qq.com  | DADADIDADI
+		</div>
+    </div>
+
+</div>
+
+
+
+<script>
+    $(".menu").mCustomScrollbar({
+        scrollButtons:{
+            enable:false,
+            scrollType:"continuous",
+            scrollSpeed:20,
+            scrollAmount:40
+        },
+        horizontalScroll:false
+    });
+    $(".main_body_con").mCustomScrollbar({
+        scrollButtons:{
+            enable:false,
+            scrollType:"continuous",
+            scrollSpeed:20,
+            scrollAmount:40
+        },
+        horizontalScroll:false
+    });
+</script>
+</body>
+</html>
